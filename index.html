@@ -1,58 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog</title>
-<style>
-    header{
-        background-color: rgb(0, 36, 90);
-        color: #FFFFFF;
-        text-align: center;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 16px;
-        border: 5px solid rgb(118, 166, 255)
-    }
-    main{
-       background-color: #FFFFFF; 
-       color: rgb(36, 62, 85);
-       max-width: 800px;
-       margin: 0 auto;
-       padding:16px ;
-    }
-    img{
-        width: 420px;
-        height: 390px;
-    }
-    .artigo-autor {
-        font-weight: bold;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog da Diva</title>
+    <style>
+header{ 
+background-color: darkred;
+color: white;
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+padding: 16px;
+border: 5px solid rgb(90, 1, 1);
+
+}
+main{
+    background-color: white;
+    color: darkred;
+max-width: 800px;
+margin: 0 auto;
+padding: 16px;
+} 
+article{
+    display: flex;
+}
+img{
+    width:300px ;
+    height: 300px;
+    border-right: 25px;
+}
+.artigo-autor  {
+    font-weight: bold;
+}
+article{
+    padding-bottom: 50px;
+}
+    </style>
 </head>
 <body>
     <header>
-         <h1>Meu blog tech</h1>
-<p>Vou compartilhar conhecimentos sobre meu museu.</p> 
+
+        <h1>Blog museu 💞​</h1>
+        <p>🇧🇷</p>
     </header>
-    <main>
-         <img src="images-blog.png" alt="Ampla galeria de um museu de arte com paredes brancas cobertas por dezenas de quadros clássicos com molduras douradas e escuras. O ambiente possui teto alto com clarabóias, arcos arquitetônicos, piso de madeira e alguns visitantes distantes caminhando pelo corredor central.">
-<div>
-  <h2>Meu primeiro post</h2>
-  <p class="artigo-autor">Por: Kassiane Nunes</p>
-  <p>Boas-vindas ao meu novo Blog! Aqui vou mostrar um pouco sobre meu museu.</p>
- <button>🩵​<span>0</span></button>
-</div>
-     </main>
+        <main>
+            
+            <article> 
+
+                <img src="images-blog.png" alt="Ampla galeria de um museu de arte com paredes brancas cobertas por dezenas de quadros clássicos com molduras douradas e escuras. O ambiente possui teto alto com clarabóias, arcos arquitetônicos, piso de madeira e alguns visitantes distantes caminhando pelo corredor central.s sobre um fundo sólido cinza-azulado.">
+                <div>
+                    
+                    <h2>Meu primeiro post</h2>
+                    <p class="artigo-autor">Por:Ana Eloise</p>
+                    <p>Boas vindas ao Meu novo Blog! Aqui irei compartilhar minhas ideias e pensamentos!.</p>
+                    <button> 😭​<span>0</span></button>
+                    <button> 🥰​ <span>0</span></button>
+                    <button> ​💬​​ <span>0</span></button>
+                </div>
+            </article>
+            <article>
+
+                <img src="Design sem nome.png" alt="foto minha(Ana Eloise).">
+                <div>
+                    
+                    <h2>Meu Segundo post</h2>
+                    <p class="artigo-autor">Por:Ana Eloise</p>
+                    <p>Um dia lindo, uma foto belissima🌻 </p>
+                    <button> 😭​<span>0</span></button>
+                    <button> 🥰​ <span>0</span></button>
+                    <button> ​💬​​ <span>0</span></button>
+                </div>
+            </article>
+        </main>
 </body>
 <script>
-    const botao = document.querySelector("button");
-    botao.addEventListener("click", botaoClicado);
+    const botoes =document.querySelectorAll("button");
 
-    function botaoclicado(){
-        console.log("fui clicado");
-        let texto = botao.querySelector("span");
-        texto.textContent++;
-    }
+    botoes.forEach( function(botao){
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado(){
+            console.log("fui clicado");
+            let texto = botao.querySelector("span")
+            if (curtiu === false){
+                texto.textContent++;
+curtiu = true;
+            } else{
+        texto.textContent--;
+        curtiu = false;
+            }
+        }
+    })
+
 </script>
 </html>
