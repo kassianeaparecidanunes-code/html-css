@@ -1,22 +1,35 @@
 header{ 
-background-color: rgb(255, 197, 130);
+background-color: rgb(253, 194, 116);
 color: white;
 text-align: center;
-max-width: 800px;
 margin: 0 auto;
 padding: 16px;
-border: 5px solid rgb(255, 194, 101);
-
+border: 5px solid  rgb(255, 197, 150);
+ 
 }
 main{
     background-color: white;
-    color: rgb(255, 117, 83);
-max-width: 800px;
+    color: rgb(252, 209, 130);
 margin: 0 auto;
 padding: 16px;
+
+display: flex;
+flex-wrap: wrap;
 } 
 article{
     display: flex;
+
+    border: 2px solid  rgb(255, 203, 134);
+    margin: 16px;
+    gap: 16px;
+    padding: 16px;
+
+    flex: 1 1 25%;
+
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 img{
     width:300px ;
