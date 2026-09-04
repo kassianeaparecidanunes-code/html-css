@@ -1,11 +1,11 @@
 :root {
-   --cor-primaria: #183c63;
-   --cor-segundaria: #3a638e;
+   --cor-primaria: #ffd382;
+   --cor-segundaria: #ffd992;
    --cor-fundo: #ffffff;
    --cor-texto: #151428;
    --cor-constraste: #f3eef7;
    --cor-botao: #f9f9f9;
-   --cor-border: rgb(0, 255, 34);
+   --cor-border: rgb(238, 196, 106);
 
    --fonte-texto:'Segoe UI', sans-serif;
 }
