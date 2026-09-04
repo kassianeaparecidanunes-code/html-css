@@ -26,3 +26,4 @@ function mudaTema() {
    } else{
       corpoPagina.classList.add("tema-escuro");
    }
+}
